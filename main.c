@@ -3,6 +3,7 @@
 
 int main()
 {
+    //hola probando git
     int numero;
     int numerospares = 0;
     int positivos = 0;
