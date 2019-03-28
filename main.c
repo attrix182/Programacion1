@@ -3,7 +3,6 @@
 
 int main()
 {
-    //hola probando git
     int numero;
     int numerospares = 0;
     int positivos = 0;
@@ -11,6 +10,7 @@ int main()
     int ceros = 0;
     int suma = 0;
     int sumaNeg = 0;
+    int difereciaNegPos = 0;
     int numeromax;
     int flagMax = 1;
     int flagMin = 1;
@@ -23,21 +23,23 @@ int main()
     {
         printf("ingrese un numero: \n");
         scanf("%d", &numero);
+        fflush(stdin);
 
         while (numero < -500 || numero > 500)
         {
             printf("Reingrese un numero: \n");
             scanf("%d", &numero);
+            fflush(stdin);
 
         }
 
-        if (numero != 'n' && numero != 0 && numero % 2 == 0 )
+        if (numero != 0 && numero % 2 == 0 )
         {
             numerospares++;
         }
 
 
-        if (numero != 'n' && numero == 0)
+        if (numero == 0)
         {
             ceros++;
         }
@@ -46,7 +48,7 @@ int main()
             positivos++;
             suma = suma + numero;
         }
-        else if (numero != 'n' && numero < 0)
+        else if (numero < 0)
         {
             negativos++;
             sumaNeg = sumaNeg + numero;
@@ -69,12 +71,22 @@ int main()
             numerosentre239y5++;
         }
 
+        difereciaNegPos = sumaNeg - suma;
 
-            printf("digite n para ver los resultados o ");
+
+
+        printf(" ¿Desea agregar otro numero? s/n : ");
+        scanf( "%c", &seguir );
+        while(seguir != 's' && seguir != 'S' && seguir != 'n' && seguir != 'N')
+        {
+            printf(" ingrese s/n : ");
             scanf( "%c", &seguir );
 
+        }
+
+
     }
-    while(seguir != 'n');
+    while(seguir != 'n' && seguir != 'N');
 
     promedio = suma / positivos;
 
@@ -87,6 +99,7 @@ int main()
     printf("el minimo es : %d\n", numeromin);
     printf("entre -239 y 5 hay : %d\n", numerosentre239y5);
     printf("la suma de negativos es : %d\n", sumaNeg);
+    printf("la diferencia entre negativos y positivos es : %d\n", difereciaNegPos);
 
     system("pause");
     return 0;
