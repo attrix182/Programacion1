@@ -3,23 +3,25 @@
 #include <string.h>
 
 #include "Producto.h"
+#include "Proveedor.h"
 
 
 void inicializarProductos(eProducto listaProductos[], int cant)
 {
     int i;
 
-    float precio[3]= {50, 42,95, 9.52};
-    char nombre[3][50]= {"AAA", "BBB", "CCC"};
-    char proveedor[3][50]= {"DDD", "EEE", "FFF"};
-    char codigoDeBarra[3][13]= {"77951234", "77959876", "77953791"};
-    char fechaDeVencimiento[3][50]= {"22/10/2020", "10/05/2019", "15/12/2008"};
+    float precio[10]= {42, 43, 44, 40, 41, 42, 35, 36, 37, 38};
+    char nombre[10][50]= {"infinia", "axion power", "V-Power", "infinia diesel", "Axion diesel", "V-Power diesel", "super", "Axion super", "normal", "querosene" };
+    //char proveedor[10][50]= {"AAA", "EEE", "FFF"};
+    char codigoDeBarra[10][13]= {"100", "200", "300", "400", "500", "600" ,"700", "800", "900", "999"};
+    char fechaDeVencimiento[10][50]= {"01/02/2020", "01/03/2020", "01/04/2020"};
+    int idProveedor[10]= { 1, 2, 3, 1, 2, 3, 1 };
 
     for(i=0; i<3; i++)
     {
         strcpy(listaProductos[i].codigoDeBarra,codigoDeBarra[i]);
         strcpy(listaProductos[i].nombre,nombre[i]);
-        strcpy(listaProductos[i].proveedor, proveedor[i]);
+        listaProductos[i].idProveedor = idProveedor[i];
         strcpy(listaProductos[i].fechaDeVencimiento, fechaDeVencimiento[i]);
         listaProductos[i].precio=precio[i];
         listaProductos[i].estado = OCUPADO;
@@ -37,7 +39,7 @@ eProducto pedirProducto()
 
     printf("Ingrese proveedor: ");
     fflush(stdin);
-    gets(productoParaRetornar.proveedor);
+    scanf("%d", &productoParaRetornar.idProveedor);
 
     printf("Ingrese codigo de barra: ");
     fflush(stdin);
@@ -58,7 +60,9 @@ eProducto pedirProducto()
 
 void mostrarProducto(eProducto unProducto)
 {
-    printf("%s %10s %15s %15s %15f %10d\n", unProducto.nombre, unProducto.proveedor, unProducto.codigoDeBarra, unProducto.fechaDeVencimiento, unProducto.precio, unProducto.estado);
+    printf("%s %5s %15s %8s %15s\n", " nombre  " , " id Proveedor  ", "  codigo De Barras  ", " F De Venc ", "  precio  ");
+    printf("%s %5d %15s %8s %15.2f \n", unProducto.nombre, unProducto.idProveedor, unProducto.codigoDeBarra, unProducto.fechaDeVencimiento, unProducto.precio);
+    printf("\n");
 }
 
 
@@ -93,7 +97,7 @@ void construirArray(eProducto listado[], int cant)
         listado[i].estado= LIBRE;
         listado[i].precio= 0;
         strcpy(listado[i].nombre, "");
-        strcpy(listado[i].proveedor, "");
+        listado[i].idProveedor = "";
         strcpy(listado[i].codigoDeBarra, "");
         strcpy(listado[i].fechaDeVencimiento, "");
     }
@@ -188,3 +192,5 @@ int editarProducto(eProducto lista[], int tam)
 
     return 0;
 }
+
+

@@ -3,8 +3,13 @@
 #include <string.h>
 
 #include "Producto.h"
+#include "proveedor.h"
 
 #define T 10
+
+void mostrarArrayProductosConProveedorElMaximo(eProducto[], int, eProveedor [], int );
+void mostrarArrayProductosConProveedorOrdenado(eProducto[],int, eProveedor [], int );
+void mostrarArrayProveedorConSusProductos(eProveedor[], iny, eProducto[], int);
 
 int main()
 {
@@ -13,6 +18,10 @@ int main()
 
     construirArray(listadoProductos, T);
     inicializarProductos(listadoProductos, T);
+
+    construirArray(listadoProveedores, T);
+    inicializarProveedores(listadoProveedores, T);
+
 
     char option;
 
@@ -46,13 +55,13 @@ int main()
         case '2':
             borrarProducto(listadoProductos,T);
             break;
-
         case '3':
             editarProducto(listadoProductos, T);
             break;
 
         case '4':
             mostrarArray(listadoProductos, T);
+            mostrarArrayProductosConProveedor(listadoProductos, T, listadoProveedores, T);
             break;
 
         case '5':
@@ -70,5 +79,22 @@ int main()
     }
     while(option != '5');
 
-    return 0;
+   return 0;
 }
+
+ void mostrarArrayProductosConProveedor(eProducto listaProductos[], int tamprod, eProveedor listaProveedores[], int tamprov)
+    {
+        int i;
+        int j;
+        for(i=0; i<tamprod; i++)
+        {
+            mostrarProducto(listadoProductos[i]);
+
+            for(j=0; j<tamprov; j++)
+            {
+                if(listadoProductos[i].idProveedor == listadoProveedores[j].id)
+                    mostrarProveedor(listadoProveedores[j]);
+            }
+        }
+    }
+

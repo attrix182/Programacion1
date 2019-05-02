@@ -12,7 +12,7 @@ typedef struct
     int estado;
     float precio;
     char nombre[50];
-  //char proveedor[50];
+  //  char proveedor[50];
     char fechaDeVencimiento[50];
     int idProveedor;
 }eProducto;
@@ -37,3 +37,5 @@ int dameLugarLibre(eProducto[], int);
 int borrarProducto(eProducto[], int);
 
 int editarProducto(eProducto[], int);
+
+
