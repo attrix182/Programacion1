@@ -28,3 +28,33 @@
 	<stdlib.h>
 	<string.h>
 
+1556850037 source:e:\usuarios\escritorio\producto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Producto.h"
+	"proveedor.h"
+
+1556809802 e:\usuarios\escritorio\producto\producto.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1556809802 e:\usuarios\escritorio\producto\proveedor.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1556849582 source:e:\usuarios\escritorio\producto\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Producto.h"
+	"Proveedor.h"
+
+1556849728 source:e:\usuarios\escritorio\producto\proveedor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Proveedor.h"
+

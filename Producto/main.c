@@ -9,12 +9,16 @@
 
 void mostrarArrayProductosConProveedorElMaximo(eProducto[], int, eProveedor [], int );
 void mostrarArrayProductosConProveedorOrdenado(eProducto[],int, eProveedor [], int );
-void mostrarArrayProveedorConSusProductos(eProveedor[], iny, eProducto[], int);
+void mostrarArrayProveedorConSusProductos(eProveedor[], int, eProducto[], int);
+//void mostrarArrayProductosConProveedor(eProducto listaProductos[], int tamprod, eProveedor listaProveedores[], int tamprov);
 
 int main()
 {
     eProducto unProducto;
     eProducto listadoProductos[T];
+
+    eProveedor unProveedor;
+    eProveedor listadoProveedores[T];
 
     construirArray(listadoProductos, T);
     inicializarProductos(listadoProductos, T);
@@ -60,8 +64,15 @@ int main()
             break;
 
         case '4':
+
+            printf("%s %10s %10s %10s %10s\n", " nombre  " , " id Proveedor  ", "  codigo De Barras  ", " F De Venc ", "  precio  ");
             mostrarArray(listadoProductos, T);
-            mostrarArrayProductosConProveedor(listadoProductos, T, listadoProveedores, T);
+
+            printf("%s %10s %10s %10s %10s\n", "id", "descripcion", "localidad", "duenio", "cuit");
+            mostrarArrayProveedores(listadoProveedores, T);
+
+//            mostrarArrayProductosConProveedor(listadoProductos, T, listadoProveedores, T);
+
             break;
 
         case '5':
@@ -81,20 +92,21 @@ int main()
 
    return 0;
 }
-
+/*
  void mostrarArrayProductosConProveedor(eProducto listaProductos[], int tamprod, eProveedor listaProveedores[], int tamprov)
     {
         int i;
         int j;
         for(i=0; i<tamprod; i++)
         {
-            mostrarProducto(listadoProductos[i]);
+            mostrarProducto(listaProductos[i]);
 
             for(j=0; j<tamprov; j++)
             {
-                if(listadoProductos[i].idProveedor == listadoProveedores[j].id)
-                    mostrarProveedor(listadoProveedores[j]);
+                if(listaProductos[i].idProveedor == listaProveedores[j].id)
+                    mostrarProveedor(listaProveedores[j]);
             }
         }
     }
 
+*/

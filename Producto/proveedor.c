@@ -29,7 +29,7 @@ void inicializarProveedores(eProveedor listaProveedores[], int cant)
 
 void mostrarProveedor(eProveedor unProveedor)
 {
-    printf("%s %10s %10s %10s %10s\n", "id", "descripcion", "localidad", "duenio", "cuit");
+
     printf("%d %10s %10s %10s %10s\n", unProveedor.id, unProveedor.descripcion, unProveedor.localidad, unProveedor.duenio, unProveedor.cuit);
 }
 

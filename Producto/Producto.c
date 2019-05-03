@@ -60,8 +60,8 @@ eProducto pedirProducto()
 
 void mostrarProducto(eProducto unProducto)
 {
-    printf("%s %5s %15s %8s %15s\n", " nombre  " , " id Proveedor  ", "  codigo De Barras  ", " F De Venc ", "  precio  ");
-    printf("%s %5d %15s %8s %15.2f \n", unProducto.nombre, unProducto.idProveedor, unProducto.codigoDeBarra, unProducto.fechaDeVencimiento, unProducto.precio);
+
+    printf("%s %10d %10s %15s %15.2f \n", unProducto.nombre, unProducto.idProveedor, unProducto.codigoDeBarra, unProducto.fechaDeVencimiento, unProducto.precio);
     printf("\n");
 }
 
