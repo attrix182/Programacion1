@@ -58,3 +58,33 @@
 	<string.h>
 	"Proveedor.h"
 
+1556884863 source:c:\users\alumno\desktop\producto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Producto.h"
+	"proveedor.h"
+
+1556850151 c:\users\alumno\desktop\producto\producto.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1556850151 c:\users\alumno\desktop\producto\proveedor.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1556850151 source:c:\users\alumno\desktop\producto\producto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Producto.h"
+	"Proveedor.h"
+
+1556850151 source:c:\users\alumno\desktop\producto\proveedor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Proveedor.h"
+
