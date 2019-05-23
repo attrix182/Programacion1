@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1558616514 source:c:\users\alumno\desktop\clase13punteros\main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+
+1558615532 c:\users\alumno\desktop\clase13punteros\persona.h
+
+1558615540 source:c:\users\alumno\desktop\clase13punteros\persona.c
+	"persona.h"
+
+1558615146 source:c:\users\alumno\desktop\clase13punteros\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funcionesGet.h"
+
+1558615323 c:\users\alumno\desktop\clase13punteros\funcionesget.h
+
+1558615146 source:c:\users\alumno\desktop\clase13punteros\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1558615146 c:\users\alumno\desktop\clase13punteros\menu.h
+
