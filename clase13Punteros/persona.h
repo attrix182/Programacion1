@@ -16,7 +16,7 @@ typedef struct
  * \return int
  *
  */
-int damePersona(ePersona[], int len);
+int damePersona(ePersona*, int len);
 
 /** \brief
  *
@@ -25,7 +25,16 @@ int damePersona(ePersona[], int len);
  * \return int
  *
  */
-int mostarPersona(ePersona[], int len);
+int mostarPersona(ePersona*, int len);
+
+/** \brief
+ *
+ * \param ePersona[]
+ * \param len int
+ * \return int
+ *
+ */
+int mostarPersonas(ePersona*, int len);
 
 
 

@@ -1,4 +1,7 @@
 #include "persona.h"
 
-//int mostrarPersona(ePersona, int len)
+int mostarPersona(ePersona *unaPersona, int len)
+{
+    printf("\n %s %d", unaPersona->nombre, unaPersona->edad);
+}
 

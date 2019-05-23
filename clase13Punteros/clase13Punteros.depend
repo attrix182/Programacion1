@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1558616514 source:c:\users\alumno\desktop\clase13punteros\main.c
+1558623096 source:c:\users\alumno\desktop\clase13punteros\main.c
 	<stdio.h>
 	<stdlib.h>
 	"persona.h"
+	"string.h"
 
-1558615532 c:\users\alumno\desktop\clase13punteros\persona.h
+1558623096 c:\users\alumno\desktop\clase13punteros\persona.h
 
-1558615540 source:c:\users\alumno\desktop\clase13punteros\persona.c
+1558623101 source:c:\users\alumno\desktop\clase13punteros\persona.c
 	"persona.h"
 
 1558615146 source:c:\users\alumno\desktop\clase13punteros\funcionesget.c

@@ -21,7 +21,9 @@ int main()
     for(i=0; i<10; i++)
     {
         (pArrayPersona+i)->edad = i;
+        auxNuevaLong = sizeof(ePersona) * (i+1);
         pAuxPersona =realloc(pArrayPersona, auxNuevaLong);
+
         if(pAuxPersona ==NULL)
         {
             printf("\n no hay lugar \n");
@@ -34,7 +36,6 @@ int main()
     {
         printf("\n %d \n", (pArrayPersona+i)->edad);
     }
-
 
     return 0;
 }
