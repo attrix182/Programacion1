@@ -20,8 +20,8 @@ int main()
 
     for(i=0; i<10; i++)
     {
-        (pArrayPersona+)->edad = i;
-        pAuxPersona =realloc((pArrayPersona, auxNuevaLong);
+        (pArrayPersona+i)->edad = i;
+        pAuxPersona =realloc(pArrayPersona, auxNuevaLong);
         if(pAuxPersona ==NULL)
         {
             printf("\n no hay lugar \n");
