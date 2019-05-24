@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1558617296 source:c:\users\alumno\desktop\clase8laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
+1558616821 source:c:\users\alumno\desktop\clase8laboratorio\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
+1558616738 c:\users\alumno\desktop\clase8laboratorio\biblioteca.h
+
+1558617625 source:c:\users\alumno\downloads\programacion-1er-cuatrimestre-master\clase8laboratorio\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"biblioteca.h"
+
+1558617625 c:\users\alumno\downloads\programacion-1er-cuatrimestre-master\clase8laboratorio\biblioteca.h
+
+1558704059 source:c:\users\alumno\downloads\programacion-1er-cuatrimestre-master\clase8laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+
